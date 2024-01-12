@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+     /* Hide the scrollbar by default */
+     div::-webkit-scrollbar {
+      display: none;
+  }
+  
+  /* Track */
+  div::-webkit-scrollbar-track {
+      background: transparent;
+  }
+  
+  /* Handle - Initial styles for the scrollbar thumb */
+  div::-webkit-scrollbar-thumb {
+      border-radius: 15px;
+  }
+  
+  /* Show the scrollbar only when hovering over the div */
+  div:hover::-webkit-scrollbar {
+      display: block;
+      width: 3px;  /* Adjust the width of the scrollbar */
+      height: 3px; /* Adjust the height of the scrollbar */
+  }
+  
+  /* Handle on hover */
+  div:hover::-webkit-scrollbar-thumb {
+      background: rgb(218, 218, 218); /* Lighter grey for visibility */
+  }
+  
+  /* Darker color when the scrollbar thumb is hovered */
+  div:hover::-webkit-scrollbar-thumb:hover {
+      background: rgb(174, 174, 174); 
+  }
+  
